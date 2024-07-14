@@ -1,7 +1,4 @@
 package com.github.zipcodewilmington;
-
-
-import javax.print.attribute.standard.MediaSize;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,7 +10,6 @@ import java.util.Scanner;
 public class Hangman {
 
     public static void main(String[] args) {
-
 
         int amountOfTries = 11;
         String[] listOfWords = {"bear", "hare", "lion", "rats"};
@@ -45,17 +41,9 @@ public class Hangman {
                     System.out.println("You got guessed wrong!");
                     amountOfTries--;
                 }
-
-
-
-
             }
         }
     }
-//    public static char[] turnIntoChar(String theword){
-//
-//        return ch;
-//    }
 
     public static boolean isMatchOrNah(String theword, char character) {
         char[] ch = theword.toCharArray();
@@ -67,10 +55,6 @@ public class Hangman {
         return false;
     }
 
-
-
-
-
     public static Integer checkWhereValueIsTrue(String theword, char character){
         char[] ch = theword.toCharArray();
         Integer index = null;
@@ -81,7 +65,6 @@ public class Hangman {
         }
         return index;
     }
-
 
     public static int chooseRandomWord(){
 
@@ -99,5 +82,4 @@ public class Hangman {
         }
         return builder.toString();
     }
-
 }
